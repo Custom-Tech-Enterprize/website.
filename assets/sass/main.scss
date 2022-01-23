@@ -6,11 +6,6 @@
 @import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
 
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 // Breakpoints.
 
@@ -25,19 +20,22 @@
 
 // Base.
 
+	
 	@import 'base/reset';
 	@import 'base/page';
 	@import 'base/typography';
 
-// Component.
+// Component. Commented out the import of files we don't need. Please confirm that we can remove them
 
-	@import 'components/row';
-	@import 'components/box';
+	//@import 'components/row'; 
+	//@import 'components/box';
 	@import 'components/button';
 	@import 'components/features';
 	@import 'components/form';
+	//needs fixing for our needs start
 	@import 'components/icon';
 	@import 'components/image';
+	//needs fixing for our needs end
 	@import 'components/list';
 	@import 'components/actions';
 	@import 'components/contact';
@@ -46,7 +44,7 @@
 	@import 'components/section';
 	@import 'components/split';
 	@import 'components/spotlights';
-	@import 'components/table';
+	//@import 'components/table';
 	@import 'components/wrapper';
 
 // Layout.

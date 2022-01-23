@@ -7,6 +7,38 @@
 /* Icon */
 
 	.icon {
+		/*@include icon;
+		border-bottom: none;
+		position: relative;
+
+		icon-twitter {
+			background-image: url('../../css/images/twitter.svg');
+			display: block;
+			width: 2.5em;
+			height: 2.5em;
+			fill: aqua;
+
+		}
+
+		icon-mastodon {
+			background-image: url('../../css/images/mastodon.svg');
+		}
+
+		icon-instagram {
+			background-image: url('../../css/images/instagram.svg');
+		}
+		icon-github {
+			background-image: url('../../css/images/github.svg');
+		}
+		icon-mail {
+			background: url('../../css/images/tinyletter.svg');
+		}
+
+
+
+
+*/
+
 		@include icon;
 		border-bottom: none;
 		position: relative;

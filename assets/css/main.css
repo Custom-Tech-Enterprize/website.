@@ -727,11 +727,10 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: rgba(255, 255, 255, 0.05);
   border-radius: 0.25em;
   border: none;
   border: solid 1px rgba(255, 255, 255, 0.15);
-  color: inherit;
+  color: black;
   display: block;
   outline: 0;
   padding: 0 1em;

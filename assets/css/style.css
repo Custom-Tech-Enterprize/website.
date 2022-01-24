@@ -46,7 +46,7 @@ body{
 	background: url("../../images/franki-chamaki-1K6IQsQbizI-unsplash.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
-	padding: 0 400px;
+	padding: 150px 400px;
 }
 
 .right{
@@ -59,7 +59,7 @@ h2{
 	margin-bottom: 10px;
 }
 
-h2:after{
+/*h2:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -69,9 +69,9 @@ h2:after{
     width: 50px;
     border-radius: 2px;
     background-color: #b64e91;
-}
+}*/
 
-.field{
+.fielding{
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
@@ -83,7 +83,7 @@ h2:after{
 	color: black;
 }
 
-.field:hover{
+.fielding:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -93,22 +93,26 @@ textarea{
 
 .btn{
 	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #b64e91;
+	padding: 1rem 1.5rem;
+	background-color: #5052b5;
 	color: #fff;
+	border-radius: 24px;
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
 }
-
-.btn:hover{
-    background-color: #5052b5;
+input  {
+	color: black;
 }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+.btn:hover{
+    background-color: #b64e91;
+}
+
+.fielding:focus{
+    border: 2px solid rgba(23,85,250,0.47);
     background-color: #fff;
 }
 

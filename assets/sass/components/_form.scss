@@ -84,11 +84,11 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		//background: _palette(border-bg);
 		border-radius: _size(border-radius);
 		border: none;
 		border: solid _size(border-width) _palette(border);
-		color: inherit;
+		color: black;
 		display: block;
 		outline: 0;
 		padding: 0 1em;

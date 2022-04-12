@@ -1014,7 +1014,7 @@ input[type=radio] + label:before {
   display: block;
   background: #ffffff;
   border-radius: 100%;
-  color: #312450;
+  color: #b9c1cb;
   text-align: center;
   line-height: 2.5em;
   margin: 0 0 1.3em 0;
@@ -1023,13 +1023,13 @@ input[type=radio] + label:before {
   font-size: 1.25em;
 }
 .wrapper.style1 .icon.major:before {
-  color: #5e42a6;
+  color: E7EBEE;
 }
 .wrapper.style1-alt .icon.major:before {
-  color: #493382;
+  color: #b9c1cb;
 }
 .wrapper.style2 .icon.major:before {
-  color: #5052b5;
+  color: #E7EBEE;
 }
 .wrapper.style2-alt .icon.major:before {
   color: #3e4094;
@@ -1536,13 +1536,13 @@ body.is-ie .spotlights > section {
   background-color: #261c3e;
 }
 .wrapper.style1 {
-  background-color: #5e42a6;
+  background-color: E7EBEE;
 }
 .wrapper.style1-alt {
   background-color: #493382;
 }
 .wrapper.style2 {
-  background-color: #5052b5;
+  background-color: #E7EBEE;
 }
 .wrapper.style2-alt {
   background-color: #3e4094;
@@ -1641,7 +1641,7 @@ body.is-ie .wrapper.fullscreen {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #5e42a6;
+  background-color: E7EBEE;
   cursor: default;
   padding: 1.75em 2em;
 }
@@ -1972,10 +1972,10 @@ body.is-ie #sidebar > .inner {
   background: #3c2c62;
 }
 #sidebar nav a:after {
-  background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: -moz-linear-gradient(to right, E7EBEE, #b74e91);
+  background-image: -webkit-linear-gradient(to right, E7EBEE, #b74e91);
+  background-image: -ms-linear-gradient(to right, E7EBEE, #b74e91);
+  background-image: linear-gradient(to right, E7EBEE, #b74e91);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;

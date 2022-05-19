@@ -519,7 +519,7 @@ body {
   border-radius: 0.25em;
   border: solid 1px rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.05);
-  margin: 0 0 2em 0;
+  margin: 0 0 0 0; /*Changed the margin from 0 0 2em 0*/
 }
 .features section {
   padding: 3.5em 3em 1em 7em;

@@ -2101,3 +2101,12 @@ body.is-preload #sidebar nav ul li {
   flex-wrap: wrap;
   gap: 15px;
 }
+
+#who-am-i {
+  background-color: black;
+  color: white;
+}
+
+#who-am-i >li >a:hover {
+  color: purple;
+}

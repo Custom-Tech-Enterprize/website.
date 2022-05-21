@@ -678,6 +678,11 @@ body {
   transform: scale(0.5);
   opacity: 0;
 }
+
+/*this can be removed later if we add the other sections back*/
+.features > section{
+  flex-grow: 1;
+}
 @media screen and (max-width: 980px) {
   .features {
     display: block;
@@ -2088,3 +2093,11 @@ body.is-preload #sidebar nav ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+/*checking the footer here*/
+#footer-container {
+  background-color: black;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}

@@ -6,33 +6,35 @@
 
 /* Footer */
 
-	#footer {
-		#sidebar + #wrapper + & {
-			margin-left: _size(sidebar-width);
+#footer {
 
-			@include breakpoint('<=large') {
-				margin-left: 0;
-			}
-		}
 
-		> .inner {
-			a {
-				border-bottom-color: _palette(border);
+	#sidebar+#wrapper+& {
+		margin-left: _size(sidebar-width);
 
-				&:hover {
-					border-bottom-color: transparent;
-				}
-			}
-
-			.menu {
-				font-size: 0.8em;
-				color: _palette(border);
-			}
-		}
-
-		#header + #wrapper + & {
-			> .inner {
-				margin: 0 auto;
-			}
+		@include breakpoint('<=large') {
+			margin-left: 0;
 		}
 	}
+
+	>.inner {
+		a {
+			border-bottom-color: _palette(border);
+
+			&:hover {
+				border-bottom-color: transparent;
+			}
+		}
+
+		.menu {
+			font-size: 0.8em;
+			color: _palette(border);
+		}
+	}
+
+	#header+#wrapper+& {
+		>.inner {
+			margin: 0 auto;
+		}
+	}
+}

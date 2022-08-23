@@ -1,4 +1,4 @@
-@import 'libs/vars';
+/*@import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/vendor';
@@ -54,3 +54,162 @@
 	@import 'layout/footer';
 	@import 'layout/sidebar';
 	@import 'layout/intro';
+*/
+
+@import 'base/reset';
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+//@import 'base/page';
+//@import 'base/typography';
+
+$primary-background-color: black;
+$primary-text-color: white;
+$primary-font: 'Ubuntu', sans-serif;
+
+body {
+	margin: 0;
+	background-color: $primary-background-color;
+
+}
+
+#app {
+	height: 100vh;
+
+
+	display: grid;
+	grid-template-columns: 1fr;
+	// take automatic space for the header and the footer
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		'header'
+		'logo'
+		'mainer'
+		'footer';
+	color: $primary-text-color;
+	font-family: $primary-font;
+
+	a {
+		text-decoration: none;
+		color: $primary-text-color;
+	}
+}
+
+// no encapsulation of the header yet. Might be needed to 
+#app>header {
+	grid-area: header;
+	display: flex;
+	padding: 2rem;
+	gap: 1rem;
+
+
+	h1 {
+		flex-grow: 1;
+		display: block;
+
+		a {
+			font-size: clamp(16px, 5vw, 32px);
+
+		}
+	}
+
+	div {
+		display: flex;
+		gap: 1rem;
+
+		ul {
+
+			display: flex;
+			gap: 1rem;
+		}
+
+		button {
+			position: relative;
+			bottom: 0.4rem;
+
+		}
+	}
+
+	.active {
+		color: #999999;
+	}
+}
+
+#app>.logo {
+	display: flex;
+	justify-content: center;
+
+	img {
+		object-fit: cover;
+		width: 100vw;
+
+	}
+}
+
+#app>.inner {
+
+	grid-area: mainer;
+	padding: 0 3rem;
+	padding-bottom: 1rem;
+
+	.features {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem;
+		background-color: rgba($color: #999999, $alpha: 0.2);
+		border-radius: 24px;
+	}
+
+
+	.menu-cards {
+		z-index: 1;
+		padding: 1rem;
+
+		h2 {
+			font-size: clamp(14px, 5vw, 20px);
+			padding-bottom: 1rem;
+		}
+	}
+
+	.menu-cards:nth-child(2n+1) {
+		border: 1px solid silver;
+		border-left: none;
+		border-top: none;
+	}
+
+	.menu-cards:nth-last-child(2) {
+		border-bottom: none;
+	}
+
+	.menu-cards:nth-child(2n) {
+		border: 1px solid silver;
+		border-right: none;
+		border-top: none;
+		border-left: none;
+	}
+
+	.menu-cards:last-child {
+		border-bottom: none;
+	}
+
+
+}
+
+#app>footer {
+	padding: 0 1rem;
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3rem;
+
+	.footer-children {
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+
+		h4 {
+			font-size: clamp (12px, 5vw, 14px);
+		}
+	}
+
+}
